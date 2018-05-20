@@ -112,7 +112,7 @@ namespace MoviesClient
                 Console.WriteLine();
                 Console.WriteLine("Wpisz swoją recenzję. Naciśniecie Enter kończy wpisywanie.");
                 var content = Console.ReadLine();
-                Console.WriteLine("Wpisz ocenę filmu w skali 0-100: ");
+                Console.WriteLine("Wpisz ocenę filmu w skali 0-100:  ");
                 var readScore = Console.ReadLine();
                 bool isRightscore = int.TryParse(readScore, out int score);
                 if (isRightscore && score >= 0 && score <= 100)
