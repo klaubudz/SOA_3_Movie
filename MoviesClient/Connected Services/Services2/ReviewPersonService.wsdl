@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ReviewPersonService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:59693/ReviewPersonService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:59693/ReviewPersonService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:59693/ReviewPersonService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IReviewPersonService_CreateReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateReview" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_CreateReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_GetReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReview" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_GetReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_GetAllReviews_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReviews" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_GetAllReviews_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReviewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_UpdateReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReview" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_UpdateReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_DeleteReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteReview" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_DeleteReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_CreatePerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePerson" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_CreatePerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_GetPerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPerson" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_GetPerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_GetAllPersons_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPersons" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_GetAllPersons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPersonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_UpdatePerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePerson" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_UpdatePerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_DeletePerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePerson" />
+  </wsdl:message>
+  <wsdl:message name="IReviewPersonService_DeletePerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePersonResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IReviewPersonService">
+    <wsdl:operation name="CreateReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReviewPersonService/CreateReview" message="tns:IReviewPersonService_CreateReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReviewPersonService/CreateReviewResponse" message="tns:IReviewPersonService_CreateReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReviewPersonService/GetReview" message="tns:IReviewPersonService_GetReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReviewPersonService/GetReviewResponse" message="tns:IReviewPersonService_GetReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReviews">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReviewPersonService/GetAllReviews" message="tns:IReviewPersonService_GetAllReviews_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReviewPersonService/GetAllReviewsResponse" message="tns:IReviewPersonService_GetAllReviews_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReviewPersonService/UpdateReview" message="tns:IReviewPersonService_UpdateReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReviewPersonService/UpdateReviewResponse" message="tns:IReviewPersonService_UpdateReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReviewPersonService/DeleteReview" message="tns:IReviewPersonService_DeleteReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReviewPersonService/DeleteReviewResponse" message="tns:IReviewPersonService_DeleteReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReviewPersonService/CreatePerson" message="tns:IReviewPersonService_CreatePerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReviewPersonService/CreatePersonResponse" message="tns:IReviewPersonService_CreatePerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReviewPersonService/GetPerson" message="tns:IReviewPersonService_GetPerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReviewPersonService/GetPersonResponse" message="tns:IReviewPersonService_GetPerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPersons">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReviewPersonService/GetAllPersons" message="tns:IReviewPersonService_GetAllPersons_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReviewPersonService/GetAllPersonsResponse" message="tns:IReviewPersonService_GetAllPersons_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReviewPersonService/UpdatePerson" message="tns:IReviewPersonService_UpdatePerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReviewPersonService/UpdatePersonResponse" message="tns:IReviewPersonService_UpdatePerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReviewPersonService/DeletePerson" message="tns:IReviewPersonService_DeletePerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReviewPersonService/DeletePersonResponse" message="tns:IReviewPersonService_DeletePerson_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IReviewPersonService" type="tns:IReviewPersonService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateReview">
+      <soap:operation soapAction="http://tempuri.org/IReviewPersonService/CreateReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReview">
+      <soap:operation soapAction="http://tempuri.org/IReviewPersonService/GetReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReviews">
+      <soap:operation soapAction="http://tempuri.org/IReviewPersonService/GetAllReviews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReview">
+      <soap:operation soapAction="http://tempuri.org/IReviewPersonService/UpdateReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReview">
+      <soap:operation soapAction="http://tempuri.org/IReviewPersonService/DeleteReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePerson">
+      <soap:operation soapAction="http://tempuri.org/IReviewPersonService/CreatePerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerson">
+      <soap:operation soapAction="http://tempuri.org/IReviewPersonService/GetPerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPersons">
+      <soap:operation soapAction="http://tempuri.org/IReviewPersonService/GetAllPersons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePerson">
+      <soap:operation soapAction="http://tempuri.org/IReviewPersonService/UpdatePerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePerson">
+      <soap:operation soapAction="http://tempuri.org/IReviewPersonService/DeletePerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ReviewPersonService">
+    <wsdl:port name="BasicHttpBinding_IReviewPersonService" binding="tns:BasicHttpBinding_IReviewPersonService">
+      <soap:address location="http://localhost:59693/ReviewPersonService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="aa73e715-67d5-4d85-a637-bee4bc6271ae" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59693/ReviewPersonService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ReviewPersonService.xsd" MetadataType="Schema" ID="9b823249-9697-40fe-8d5d-368406e42757" SourceId="1" SourceUrl="http://localhost:59693/ReviewPersonService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ReviewPersonService.disco" MetadataType="Disco" ID="c2792ec8-89cd-4457-9504-a58e76e2121c" SourceId="1" SourceUrl="http://localhost:59693/ReviewPersonService.svc?disco" />
+    <MetadataFile FileName="ReviewPersonService1.xsd" MetadataType="Schema" ID="817c9aea-4b20-40ce-b0c8-067902bbea46" SourceId="1" SourceUrl="http://localhost:59693/ReviewPersonService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ReviewPersonService2.xsd" MetadataType="Schema" ID="e83e2039-1aa4-47a0-81c4-3a93bef2603d" SourceId="1" SourceUrl="http://localhost:59693/ReviewPersonService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ReviewPersonService.wsdl" MetadataType="Wsdl" ID="40658a8f-570e-4838-9536-6642b4c019cf" SourceId="1" SourceUrl="http://localhost:59693/ReviewPersonService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

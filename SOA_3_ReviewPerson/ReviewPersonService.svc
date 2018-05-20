@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SOA_3_ReviewPerson.ReviewPersonService" CodeBehind="ReviewPersonService.svc.cs" %>
